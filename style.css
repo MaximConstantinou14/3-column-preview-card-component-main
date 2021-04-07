@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca' , sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.cards{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards__container{
+    width: 70%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__one{
+    background-color: hsl(31, 77%, 52%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card__one__container{
+    width: 65%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card__one__title{
+    font-family: 'Big Shoulders Display';
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: -3rem;
+}
+
+.card__one__par{
+    margin-top: -3rem;
+}
+
+.button__one{
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    border: none;
+    color:hsl(31, 77%, 52%);;
+}
+
+.card__two{
+    background-color: hsl(184, 100%, 22%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__two__container{
+    width: 65%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card__two__title{
+    font-family: 'Big Shoulders Display';
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: -3rem;
+}
+
+.card__two__par{
+    margin-top: -3rem;
+}
+
+.button__two{
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    border: none;
+    color:hsl(184, 100%, 22%);
+}
+
+.card__three{
+    background-color: hsl(179, 100%, 13%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card__three__container{
+    width: 65%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card__three__title{
+    font-family: 'Big Shoulders Display';
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: -3rem;
+}
+
+.card__three__par{
+    margin-top: -3rem;
+}
+
+.button__three{
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    border: none;
+    color:hsl(179, 100%, 13%) ;
+}
+
+/*Hover States*/
+
+.button__one:hover{
+   cursor: pointer;
+}
+
+.button__two:hover{
+   cursor: pointer;
+}
+
+.button__three:hover{
+   cursor: pointer;
+}
+
+/*Active states*/
+.button__one:active{
+    background-color: transparent;
+    border: 2px solid white;
+    padding:  0.89rem 2.85rem;
+    color: white;  
+ }
+ 
+ .button__two:active{
+    background-color: transparent;
+    border: 2px solid white;
+    padding:  0.89rem 2.85rem;
+    color: white; 
+ }
+ 
+ .button__three:active{
+    background-color: transparent;
+    border: 2px solid white;
+    padding:  0.89rem 2.85rem;
+    color: white; 
+ }
+
+/* Responsive */
+
+@media screen and (max-width:375px){
+
+body{
+    height: 100rem;
+}
+
+.cards__container{
+    flex-direction: column;
+}
+
+.card__one{
+    min-height: 30rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+.card__two{
+    min-height: 30rem;
+}
+.card__three{
+    min-height: 30rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+}
+
+}
